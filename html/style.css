@@ -1,0 +1,133 @@
+@media (max-width: 768px) {
+    body {
+        background-color: #92a3ff
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    section {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+body{
+    font-family: Arial;
+    background-color: #white;
+    color: #black;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+/* Estilos para el párrafo */
+p {
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Estilos para la cita */
+blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: left;
+    background-color: #cbcbcb;
+    padding: 15px;
+    margin: 20px 0;
+    color: #black;
+}
+
+/* Estilos para las cajas */
+.caja {
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+/* Estilos para la caja destacada */
+.destacada {
+    background-color: #f5bc57;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el contenedor relativo */
+.relativo {
+    position: relative;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 40px auto;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    height: 20px;
+    width: 1250px;
+}
+
+/* Estilos para el contenedor absoluto */
+.absoluto {
+    position: absolute;
+    top: 50px;
+    left: 550px;
+    background-color: #5789f5 ;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Estilo para los elementos de la cuadrícula */
+.grid-item {
+    background-color: #92a3ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para el div con clase animacion */
+.animacion {
+    width: 150px;
+    height: 150px;
+    background-color: #1a3bee;
+    transition: background-color 0.5s ease;
+}
+.animacion:hover {
+    background-color: #ee271a;
+}
+
+/* Estilo para el div con clase mover */
+.mover {
+    width: 130px;
+    height: 130px;
+    background-color: #581845;
+    border-radius: 50%;
+    animation: moverDerecha 5s linear infinite;
+}
+/* Definición de la animación */
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
